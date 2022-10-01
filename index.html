@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
 
-    <title>Mario Game</title>
+    <script defer src="./js/login.js"></script>
+
+    <title>Memory Game | Login</title>
 </head>
 <body>
 
-    <div class="game-board" ontouchstart="jump()">
-        <img src="./images/clouds.png" class="clouds">
-        <img src="./images/mario.gif" class="mario">
-        <img src="./images/pipe.png" class="pipe">
+    <form class="login-form">
 
-    </div>
+        <div class="login__header">
+            <img src="./images/brain.png" alt="brain icon">
+            <h1>Memory Game</h1>
+        <div>
 
-    <div>Primeiro Jogo do Gonçalo</div>
+        <input type="text" placeholder="Name" class="login__input">
+        <button type="submit"class="login__button" disabled>Play</button>
+
+    </form>
 </body>
 </html>
